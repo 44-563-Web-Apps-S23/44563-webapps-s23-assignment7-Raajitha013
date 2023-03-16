@@ -3,28 +3,28 @@
 
 <head>
     <title>
-        Delay Queue
+        Delay Queue Page
     </title>
     <style>
         .flex-container {
             display: flex;
             flex-direction: row;
-            background-color: red;
+            background-color: darkmagenta;
         }
 
         .flex-container>div {
             /*div children of the flex container*/
-            background-color: #f1f1f1;
-            margin: 10px;
-            padding: 20px;
-            font-size: 30px;
+            background-color: burlywood;
+            margin: 15px;
+            padding: 25px;
+            font-size: 35px;
         }
 
         /* Responsive layout */
-        @media (max-width: 600px) {
+        @media (max-width: 500px) {
             .flex-container {
                 flex-direction: column;
-                background-color: green;
+                background-color: gold;
             }
         }
     </style>
@@ -71,16 +71,16 @@
 
     function get(){
         let queueItems = document.getElementsByClassName("delayQ")
-        let queueLength = queueItems.length
-        if(queueLength>0){
+        let length = queueItems.length
+        if(length>0){
             queueItems[0].remove()
         }
     }
 
     function delay(){
         let queueItems = document.getElementsByClassName("delayQ")
-        let queueLength = queueItems.length
-        if(queueLength == 0 || queueLength == 1){
+        let length = queueItems.length
+        if(length == 0 || length == 1){
             return
         }
         else{
